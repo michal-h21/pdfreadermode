@@ -1,4 +1,7 @@
 const pkg = require('../package.json')
+const config = require('find-config')
+const log = require('../modules/log')
 module.exports = (args) => {
-  console.log("Convert URL: " + args._[0])
+  log.info("Convert URL: " + args._[0])
+  log.fatal("chybka")
 }
