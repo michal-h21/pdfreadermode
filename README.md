@@ -1,5 +1,9 @@
 # PDF Reader Mode
 
+## Usage
+
+Run `pdfreadermode -h` to get basic usage
+
 ## Configuration
 
 The application can be configured using `pdfreadermode.json` file placed in the current directory or `$XDG_CONFIG_HOME` directory (usually `~/.config/pdfreadermode.json`)
