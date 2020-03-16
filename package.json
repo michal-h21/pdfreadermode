@@ -1,0 +1,25 @@
+{
+  "name": "pdfreadermode",
+  "version": "1.0.0",
+  "description": "Convert web pages to PDF using Mozilla's Readability library, Pandoc and LuaLaTeX ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michal-h21/pdfreadermode.git"
+  },
+  "keywords": [
+    "PDF",
+    "HTML",
+    "LaTeX",
+    "ebook"
+  ],
+  "author": "Michal Hoftich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michal-h21/pdfreadermode/issues"
+  },
+  "homepage": "https://github.com/michal-h21/pdfreadermode#readme"
+}
