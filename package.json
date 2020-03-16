@@ -1,5 +1,5 @@
 {
-  "name": "PDF Reader Mode",
+  "name": "PDFReaderMode",
   "version": "1.0.0",
   "description": "Convert web pages to PDF using Mozilla's Readability library, Pandoc and LuaLaTeX ",
   "main": "index.js",
@@ -26,6 +26,12 @@
   },
   "homepage": "https://github.com/michal-h21/pdfreadermode#readme",
   "dependencies": {
-    "minimist": "^1.2.5"
+    "find-config": "^1.0.0",
+    "fs": "0.0.1-security",
+    "jsdom": "^16.2.1",
+    "minimist": "^1.2.5",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7",
+    "readability": "git+https://github.com/mozilla/readability.git"
   }
 }
