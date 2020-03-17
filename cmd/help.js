@@ -9,10 +9,11 @@ Options:
   -f, --format   Output format. Supported values
     tex 
     pdf
-  -h, --help     Print help message
-  -o, --output   Output file name
-  -u, --url      Set URL for HTML files loaded from 
-  -v, --version  Print version info
+  -h, --help       Print help message
+  -o, --output     Output file name
+      --no-images  Don't download images
+  -u, --url        Set URL for HTML files loaded from 
+  -v, --version    Print version info
     
 
 HTML file
