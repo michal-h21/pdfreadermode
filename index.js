@@ -2,7 +2,11 @@ const minimist = require('minimist')
 
 module.exports = () => {
   // process CLI arguments
-  const args = minimist(process.argv.slice(2))
+  const args = minimist(process.argv.slice(2), {
+    boolean: ["images"],
+    alias: { f: "format"},
+    default: { f: "pdf", images: true }
+  })
   let cmd = (args._[0] ? "convert" : "help")
   if (args.version || args.v) {
     cmd = 'version'
