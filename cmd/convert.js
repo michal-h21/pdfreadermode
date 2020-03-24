@@ -61,11 +61,17 @@ module.exports = (args) => {
     function(options){
       const article = new Article(options.input, options.url, configuration)
       article.convert(options)
-      article.save_images()
+      if (args["images"]!=false){// images are downloaded by default
+        article.save_images()
+      }
+      return article
     },
     function(error){
       log.fatal(error.message)
     }
 
-  )
+  ).then(function(article){
+    let text_content = article.tex_content()
+    console.log(text_content)
+  })
 }

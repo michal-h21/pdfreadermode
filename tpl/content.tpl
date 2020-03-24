@@ -1,7 +1,7 @@
-\title{{{title}}}
-\author{{{byline}}}
+\title{<%title%>}
+\author{<%byline%>}
 \maketitle
 \begin{abstract}
-{{excerpt}
+<%excerpt%>
 \end{abstract}
-{{tex_content}}
+<%tex_content%>
