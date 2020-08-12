@@ -26,7 +26,8 @@ class Article {
   save_image(url){
     // create hash from the image URL. It should be unique and needs to be safe to be used
     const hash = crypto.createHash('sha256').update(url).digest('base64').replace(/\//g,"-").replace(/\+/g, "_").replace(/=/g,"")
-    const ext = path.extname(url)
+    // clean extension from any URL parameters
+    const ext = path.extname(url).replace(/\?.*$/, "")
     const newname = path.normalize(this.config.resource_dir + "/" + hash + ext)
     // don't donwload image if it already exists
     if (fs.existsSync(newname)){ return newname }
